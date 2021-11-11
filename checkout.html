@@ -14,13 +14,10 @@
     <body class="bg-light">
 
         <div class="container text-center">
-            <div class="py-5">
+            <div class="py-4">
                 <h1>
                     Checkout
                 </h1>
-                <p class="lead">
-                    Continue with your purchase
-                </p>
             </div>
         </div>
 
@@ -107,8 +104,47 @@
                         <input id="zipcode" type="number" class="form-control" placeholder="00000" required>
                     </div>
 
-                <hr class="my-4">
-                
+                    <hr class="col-12 my-4">
+                    
+                    <h4 class="col-12 mb-3">Payment</h4>
+                    
+                    <div class="col-12 form-check ml-4">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">Credit Card</label>
+                    </div>
+                    <div class="col-12 form-check ml-4">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">Echeck</label>
+                    </div>
+                    <div class="col-12 form-check ml-4">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">PayPal</label>
+                    </div>
+                </div>
+
+
+                <div class="row my-3 gy-3">
+                    <div class="col-6">
+                        <label class="form-label">Name On Card</label>
+                        <input type="text" class="form-control" placeholder="Jane Smith" required>
+                        <small class="text-muted">Full name displayed on card</small>
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label">Credit Card Number</label>
+                        <input type="number" class="form-control" placeholder="1234 5678 9876" required>
+                    </div>
+                    <div class="col-3 mt-3">
+                        <label class="form-label">Expiration</label>
+                        <input type="text" class="form-control" placeholder="MM/YY" required>
+                    </div>
+                    <div class="col-3 mt-3">
+                        <label class="form-label">CVV</label>
+                        <input type="text" class="form-control" placeholder="xxx" required>
+                    </div>
+
+                    <hr class="col-12 my-4">
+
+                    <button class="btn btn-primary btn-lg btn-block">Proceed With Checkout</button>
                 </div>
             </form>
         </div>
