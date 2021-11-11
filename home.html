@@ -4,13 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-        <title>HW4 - Brian, Austen</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>HW4 - Home</title>
     </head>
 
-    <body class="bg-light" style="padding-top: 65px;">
+    <body class="bg-light" style="padding-top: 65px; min-height:1200px;">
 
         <!-- Navbar -->
         <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
@@ -52,8 +51,27 @@
             </div>
         </nav>
 
-        <!-- Carousel Here! -->
-        <!-- Make cards link to pet pages -->
+        <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide mb-3" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active bg-secondary" style="background-image:url(images/dogcat.jpeg)"> </div>
+                <div class="carousel-item bg-secondary" style="background-image:url(images/pets.png)"> </div>
+                <div class="carousel-item bg-secondary" style="background-image:url(images/puppycat.jpeg)"> </div>
+            </div>
+            <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+                <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
 
         <!-- Item Cards -->
         <div class="container text-center">
