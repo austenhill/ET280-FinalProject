@@ -10,32 +10,44 @@
         <title>HW4 - Brian, Austen</title>
     </head>
 
-    <body>
-
-        <!-- Heading -->
-        <div class="container text-center pt-3">
-            <h1 class="display-4">Pet Store</h1>
-            <p class="lead">This is a pet store</p>
-        </div>
-
+    <body class="bg-light">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a href="#" class="navbar-brand mb-0 h1">Pet Store</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="home.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="dogs.html" class="nav-link">Dogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="cats.html" class="nav-link">Cats</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link active">Birds</a>
-                    </li>
-                </ul>
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand mb-0 h1">Pet Store</a>
+
+                <button 
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    class="navbar-toggler"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle Navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="dogs.html" class="nav-link">Dogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cats.html" class="nav-link">Cats</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link active">Birds</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex">
+                    <input type="text" class="form-control me-2">
+                    <button class="btn btn-primary">Search</button>
+                </form>
             </div>
         </nav>
 
