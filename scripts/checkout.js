@@ -57,4 +57,6 @@ function submitOrder(){
 
     XHR.send(JSON.stringify(data))
 
+    localStorage.clear()
+
 }
