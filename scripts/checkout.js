@@ -49,6 +49,12 @@ function submitOrder(){
 
     XHR.setRequestHeader( 'Content-Type', 'application/json' );
 
+    XHR.onreadystatechange = function () {
+        if (XHR.readyState === 4 && XHR.status === 200) {
+            confirm("Your order has been sent!")
+        }
+    }
+
     XHR.send(JSON.stringify(data))
 
 }
