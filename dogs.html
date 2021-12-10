@@ -6,8 +6,8 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-        <title>HW4 - Dogs</title>
+        
+        <title>FinalProject - Dogs</title>
     </head>
 
     <body class="bg-light" style="padding-top: 65px;">
@@ -45,8 +45,8 @@
                     </ul>
                 </div>
                 <form class="d-flex">
-                    <input type="text" class="form-control me-2">
-                    <button class="btn btn-primary">Search</button>
+                    <h3 class="navbar-brand h3 mb-0 mr-2" id="navTotal"></h3>
+                    <button class="btn btn-primary checkoutButton"><a href="checkout.html" class="btn-primary">Checkout</a></button>
                 </form>
             </div>
         </nav>
@@ -66,7 +66,7 @@
                             <h1 class="my-0 font-weight-normal">$800</h1>
                             <img src="images/labrador.jpeg" alt="" class="img-thumbnail">
                             <p>Black Labrador Retriever</p>
-                            <a href="checkout.html" class="btn btn-outline-primary btn-block mt-auto">Buy Me!</a>
+                            <button class="btn btn-primary updateCart" id="updateCart" name="Labrador Retriever">Add To Cart</button>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                             <h1 class="my-0 font-weight-normal">$800</h1>
                             <img src="images/rhodesianridgeback.jpeg" alt="" class="img-thumbnail">
                             <p>Rhodesian Ridgeback</p>
-                            <a href="checkout.html" class="btn btn-outline-primary btn-block mt-auto">Buy Me!</a>
+                            <button class="btn btn-primary updateCart" id="updateCart" name="Rhodesian Ridgeback">Add To Cart</button>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                             <h1 class="my-0 font-weight-normal">$800</h1>
                             <img src="images/germanshepherd.jpeg" alt="" class="img-thumbnail">
                             <p>German Shepherd</p>
-                            <a href="checkout.html" class="btn btn-outline-primary btn-block mt-auto">Buy Me!</a>
+                            <button class="btn btn-primary updateCart" id="updateCart" name="German Shepherd">Add To Cart</button>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                             <h1 class="my-0 font-weight-normal">$800</h1>
                             <img src="images/siberianhusky.webp" alt="" class="img-thumbnail">
                             <p>Siberian Husky</p>
-                            <a href="checkout.html" class="btn btn-outline-primary btn-block mt-auto">Buy Me!</a>
+                            <button class="btn btn-primary updateCart" id="updateCart" name="Siberian Husky">Add To Cart</button>
                         </div>
                     </div>
                 </div>
@@ -115,6 +115,7 @@
         </div>
 
         <!-- Bootstrap Scripts -->
+        <script src="scripts/main.js" ></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
             crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 

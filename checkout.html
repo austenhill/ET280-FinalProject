@@ -7,7 +7,8 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+        <script src="scripts/main.js"></script>
+        <script src="scripts/checkout.js"></script>
         <title>HW4 - Checkout</title>
     </head>
 
@@ -46,15 +47,26 @@
                     </ul>
                 </div>
                 <form class="d-flex">
-                    <input type="text" class="form-control me-2">
-                    <button class="btn btn-primary">Search</button>
+                    <h3 class="navbar-brand h3 mb-0 mr-2" id="navTotal"></h3>
+                    <button class="btn btn-primary checkoutButton"><a href="checkout.html" class="btn-primary">Checkout</a></button>
                 </form>
             </div>
         </nav>
 
         <div class="container">
+            <h3 class="mb-3">Order Summary</h3>
+            <div class="row">
+                <div class="col-4" id="checkoutPets">
+                    <h5 class="form-label border-bottom">Pets</h5>
+                </div>
+                <div class="col-4" id="checkoutTotal">
+                    <h5 class="form-label border-bottom">Total</h5>
+                </div>
+            </div>
+
+            <hr>
+            
             <h4 class="mb-3">Billing Address</h4>
-            <form action="">
                 <div class="row">
                     <div class="col-4">
                         <label for="firstName" class="form-label">First Name</label>
@@ -70,11 +82,11 @@
                     </div>
                     <div class="col-4 mt-3">
                         <label for="city" class="form-label">City</label>
-                        <input id="city" type="number" class="form-control" placeholder="Your City " required>
+                        <input id="city" type="text" class="form-control" placeholder="Your City " required>
                     </div>
                     <div class="col-4 mt-3">
                         <label for="state" class="form-label">State</label>
-                        <select name="state" class="form-control">
+                        <select id="state" name="state" class="form-control">
                             <option value="">Choose...</option>
                             <option value="AK">Alaska</option>
                             <option value="AL">Alabama</option>
@@ -136,48 +148,11 @@
                     </div>
 
                     <hr class="col-12 my-4">
-                    
-                    <h4 class="col-12 mb-3">Payment</h4>
-                    
-                    <div class="col-12 form-check ml-4">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                        <label class="form-check-label" for="flexRadioDefault1">Credit Card</label>
-                    </div>
-                    <div class="col-12 form-check ml-4">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">Echeck</label>
-                    </div>
-                    <div class="col-12 form-check ml-4">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">PayPal</label>
-                    </div>
-                </div>
-
-
-                <div class="row my-3 gy-3">
-                    <div class="col-6">
-                        <label class="form-label">Name On Card</label>
-                        <input type="text" class="form-control" placeholder="Jane Smith" required>
-                        <small class="text-muted">Full name displayed on card</small>
-                    </div>
-                    <div class="col-6">
-                        <label class="form-label">Credit Card Number</label>
-                        <input type="number" class="form-control" placeholder="1234 5678 9876" required>
-                    </div>
-                    <div class="col-3 mt-3">
-                        <label class="form-label">Expiration</label>
-                        <input type="text" class="form-control" placeholder="MM/YY" required>
-                    </div>
-                    <div class="col-3 mt-3">
-                        <label class="form-label">CVV</label>
-                        <input type="text" class="form-control" placeholder="xxx" required>
-                    </div>
 
                     <hr class="col-12 my-4">
 
-                    <button class="btn btn-primary btn-lg btn-block">Proceed With Checkout</button>
+                    <button class="btn btn-primary btn-lg btn-block" id="submitOrder">Complete Order</button>
                 </div>
-            </form>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
